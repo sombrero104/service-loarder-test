@@ -33,6 +33,8 @@ Processor도 인터페이스이다.<br/>
 그런데 실행이 아니라 컴파일만 했을 때 process()가 실행된다.<br/>
 컴파일할 때 기본적으로 Processor 구현체들의 process()를 실행하는 것 같다. <br/>
 자세한건 더 공부해봐야 알겠지만..  <br/>
+(참고로 스프링부트의 autoconfigure 에서 spring.factories 파일은 <br/>
+ spring-core의 SpringFactoriesLoader에서 부른다. 때문에 여기에서 services에 파일을 등록한 것과는 관련이 없다.)<br/>
 <br/>
 
 https://docs.oracle.com/javase/7/docs/api/java/util/ServiceLoader.html <br/>
